@@ -183,6 +183,7 @@ nav ul li a:hover {
     display: flex;
     gap: 20px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -318,6 +319,7 @@ nav ul li a:hover {
 .right .btns {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 /* PORTFOLIO SECTION  */
@@ -411,6 +413,11 @@ nav ul li a:hover {
     color: #94a3b8;
     margin-bottom: 15px;
     line-height: 1.6;
+}
+#projects .content .btns {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
 }
 
 /* SERVICE SECTION  */
@@ -766,6 +773,18 @@ nav ul li a:hover {
         font-size: 14px;
     }
 
+    .hero-btns, .right .btns, #projects .content .btns {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin: 20px auto 0;
+    }
+
+    .hero-btns .btn, .right .btns .btn, #projects .content .btns .btn {
+        width: 100%;
+        text-align: center;
+    }
+
     .skills-grid {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
@@ -781,6 +800,29 @@ nav ul li a:hover {
 
     #projects h2, #services h2, #experience h2, #contact h2 {
         font-size: 28px;
+    }
+}
+
+@media (max-width: 360px) {
+    #about, #projects, #services, #experience, #contact, #footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 13px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+
+    .right h2 {
+        font-size: 36px;
     }
 }
 
