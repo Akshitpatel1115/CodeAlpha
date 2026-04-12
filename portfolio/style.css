@@ -31,8 +31,8 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: 
-        radial-gradient(circle at 2px 2px, rgba(255,255,255,0.05) 1px, transparent 0);
+    background-image:
+        radial-gradient(circle at 2px 2px, rgba(255, 255, 255, 0.05) 1px, transparent 0);
     background-size: 40px 40px;
     z-index: -1;
     pointer-events: none;
@@ -116,8 +116,15 @@ nav ul li a:hover {
 }
 
 @keyframes pulseGlow {
-    0% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
-    100% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.8; }
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 0.8;
+    }
 }
 
 .pre-title {
@@ -139,6 +146,7 @@ nav ul li a:hover {
 .gradient-text {
     background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -217,8 +225,15 @@ nav ul li a:hover {
 }
 
 @keyframes scrollMouse {
-    0% { transform: translate(-50%, 0); opacity: 1; }
-    100% { transform: translate(-50%, 15px); opacity: 0; }
+    0% {
+        transform: translate(-50%, 0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, 15px);
+        opacity: 0;
+    }
 }
 
 .scroll-indicator span {
@@ -301,7 +316,7 @@ nav ul li a:hover {
     margin: auto;
 }
 
-#projects a{
+#projects a {
     text-decoration: none;
 }
 
