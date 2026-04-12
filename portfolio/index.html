@@ -7,35 +7,53 @@
     <title>Akshit Patel - Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <h2><a href="index.html">FS Developer</a></h2>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">Contact</a></li>
+            <h2><a href="index.html">Frontend Developer</a></h2>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
 
     <main>
         <!-- HERO SECTION -->
         <section id="hero">
+            <div class="hero-bg-glow"></div>
             <div class="hero-content">
-                <h1>I'm a <span>Full Stack Developer</span></h1>
-                <p>I build modern, scalable and user-friendly web applications.</p>
-                <button class="btn">View Projects</button>
+                <p class="pre-title">Hello, I'm Akshit Patel</p>
+                <h1>I'm a <span class="gradient-text">Frontend Developer</span></h1>
+                <p>I build modern, scalable and user-friendly web applications with cutting-edge technologies.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn">View Projects</a>
+                    <a href="assets/resume.pdf" class="btn btn-outline">Download Resume</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Scroll Down</span>
             </div>
         </section>
 
         <!-- ABOUT SECTION -->
-        <section id="about">
+        <section id="about" class="reveal">
             <div class="container">
 
                 <div class="left">
@@ -44,7 +62,7 @@
 
                 <div class="right">
                     <h2>About Me</h2>
-                    <p>Aspiring Full Stack Developer passionate about building real-world web applications. Skilled in
+                    <p>Aspiring Frontend Developer passionate about building real-world web applications. Skilled in
                         HTML, CSS, JavaScript, and Firebase, with experience in developing real-time systems like a
                         Cricket Auction platform. Continuously learning and exploring modern technologies to create
                         impactful digital solutions.</p>
@@ -59,76 +77,295 @@
         </section>
 
         <!-- PORTFOLIO SECTION -->
-        <section id="portfolio">
+        <section id="projects" class="reveal">
             <div class="container">
+                <h2>Featured Projects</h2>
 
+                <!-- PROJECT 1 -->
                 <div class="card">
                     <div class="img">
-                        <img src="assets/images/akshit.jpeg" alt="1">
+                        <img src="assets/images/auction.png" alt="Auction Orbit">
                     </div>
 
                     <div class="content">
-                        <h3>Cricket Auction System</h3>
-                        <p>Real-time cricket auction system using Firebase with live bidding and admin panel.</p>
-                        <button class="btn">View Project</button>
+                        <h3>Auction Orbit</h3>
+                        <p>Real-time auction platform with Firebase sync, admin control panel, voice announcements, and
+                            live bid validation system.</p>
+
+                        <div class="btns">
+                            <a target="_blank" href="https://auction-orbit.web.app/" class="btn">View Project</a>
+                            <a href="https://github.com/Akshitpatel1115/Auction-Orbit" class="btn github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+                <!-- PROJECT 2 -->
                 <div class="card reverse">
                     <div class="img">
-                        <img src="assets/images/akshit.jpeg" alt="2">
+                        <img src="assets/images/spherewalk.png" alt="Sphere Walk">
                     </div>
 
                     <div class="content">
-                        <h3>Portfolio Website</h3>
-                        <p>Personal portfolio website built using HTML, CSS and JavaScript.</p>
-                        <button class="btn">View Project</button>
+                        <h3>Sphere Walk</h3>
+                        <p>360° virtual campus tour with AR navigation and AI assistant using Gemini API. Built in a
+                            24-hour hackathon.</p>
+
+                        <div class="btns">
+                            <a target="_blank" href="https://spherewalk.greennode.in/" class="btn">View Project</a>
+                            <a href="https://github.com/lucky-om/Spherewalk" class="btn github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+                <!-- PROJECT 3 -->
                 <div class="card">
                     <div class="img">
-                        <img src="assets/images/akshit.jpeg" alt="3">
+                        <img src="assets/images/eventsetu.png" alt="EventSetu">
                     </div>
 
                     <div class="content">
-                        <h3>E-Commerce UI</h3>
-                        <p>Modern e-commerce UI design with responsive layout and clean design.</p>
-                        <button class="btn">View Project</button>
+                        <h3>EventSetu</h3>
+                        <p>Marketplace platform connecting event customers with vendors using Laravel MVC and MySQL.</p>
+
+                        <div class="btns">
+                            <a target="_blank" href="https://eventsetu.is-great.org/" class="btn">View Project</a>
+                            <a href="https://github.com/Akshitpatel1115/EventSetu" class="btn github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+                <!-- PROJECT 4 -->
                 <div class="card reverse">
                     <div class="img">
-                        <img src="assets/images/akshit.jpeg" alt="4">
+                        <img src="assets/images/fitness.png" alt="MyFitness Gym">
                     </div>
 
                     <div class="content">
-                         <h3>Chat Application</h3>
-                <p>Real-time chat application with modern UI and smooth user experience.</p>
-                <button class="btn">View Project</button>
+                        <h3>MyFitness GYM</h3>
+                        <p>Responsive fitness website with blog, membership plans, and login system built using HTML,
+                            CSS, and JavaScript.</p>
+
+                        <div class="btns">
+                            <a href="https://github.com/Akshitpatel1115/MyFitness-GYM" class="btn github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+                <div class="coming-soon">
+                    <p>More exciting projects coming soon! <i class="fas fa-hammer"></i></p>
+                </div>
+
             </div>
         </section>
 
         <!-- SERVICES SECTION -->
-        <section id="services">
+        <section id="services" class="reveal">
             <h2>Services</h2>
+
+            <div class="container">
+
+                <div class="service-card">
+                    <i class="fas fa-desktop"></i>
+                    <h3>Frontend Development</h3>
+                    <p>Building high-performance, responsive, and pixel-perfect user interfaces using modern technologies like HTML, CSS, and JS frameworks.</p>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>User-Centric Design</h3>
+                    <p>Crafting intuitive and responsive UI/UX that prioritizes user experience and brand identity across all devices.</p>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <h3>Cloud & DB Solutions</h3>
+                    <p>Implementing real-time synchronization and secure data management using Firebase, MySQL, and SQL.</p>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Performance Tuning</h3>
+                    <p>Optimizing web applications for speed, SEO, and ensuring high performance for a seamless user experience.</p>
+                </div>
+
+            </div>
         </section>
 
         <!-- EXPERIENCE SECTION -->
-        <section id="experience">
-            <h2>Experience</h2>
+        <section id="experience" class="reveal">
+            <h2>My Skills</h2>
+
+            <div class="container">
+
+                <!-- FRONTEND -->
+                <div class="category">
+                    <h3>Frontend</h3>
+                    <div class="skills-grid">
+                        <div class="skill">
+                            <img src="assets/icons/html.jpg" alt="HTML">
+                            <p>HTML</p>
+                        </div>
+                        <div class="skill">
+                            <img src="assets/icons/css.jpg" alt="CSS">
+                            <p>CSS</p>
+                        </div>
+                        <div class="skill">
+                            <img src="assets/icons/js.jpg" alt="JavaScript">
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fab fa-bootstrap"></i>
+                            <p>Bootstrap</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fas fa-code"></i>
+                            <p>jQuery</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BACKEND -->
+                <div class="category">
+                    <h3>Backend / Programming</h3>
+                    <div class="skills-grid">
+                        <div class="skill">
+                            <img src="assets/icons/Java.jpg" alt="Java">
+                            <p>Java</p>
+                        </div>
+                        <div class="skill">
+                            <img src="assets/icons/python.jpg" alt="Python">
+                            <p>Python</p>
+                        </div>
+                        <div class="skill">
+                            <img src="assets/icons/c.jpg" alt="C">
+                            <p>C</p>
+                        </div>
+                        <div class="skill">
+                            <img src="assets/icons/cpp.jpg" alt="C++">
+                            <p>C++</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fas fa-desktop"></i>
+                            <p>VB</p>
+                        </div>
+                        <div class="skill">
+                            <img src="assets/icons/net.jpg" alt="VB.NET">
+                            <p>VB.NET</p>
+                        </div>
+                        <div class="skill">
+                            <img src="assets/icons/node.jpg" alt="Node.js">
+                            <p>Node.js</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DATABASE -->
+                <div class="category">
+                    <h3>Database</h3>
+                    <div class="skills-grid">
+                        <div class="skill">
+                            <i class="fas fa-database"></i>
+                            <p>SQL</p>
+                        </div>
+                        <div class="skill">
+                            <img src="assets/icons/mysql.jpg" alt="MySQL">
+                            <p>MySQL</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fas fa-database"></i>
+                            <p>SQLite</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fas fa-file-code"></i>
+                            <p>JSON</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TOOLS -->
+                <div class="category">
+                    <h3>Tools / IDEs</h3>
+                    <div class="skills-grid">
+                        <div class="skill">
+                            <img src="assets/icons/vs.jpg" alt="VS Code">
+                            <p>VS Code</p>
+                        </div>
+                        <div class="skill">
+                            <img src="assets/icons/vs(.net).jpg" alt="Visual Studio (.NET)">
+                            <p>Visual Studio (.NET)</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fab fa-python"></i>
+                            <p>Python IDLE</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
         <!-- CONTACT SECTION -->
-        <section id="contact">
+        <section id="contact" class="reveal">
             <h2>Contact Me</h2>
+
+            <div class="container">
+
+                <!-- LEFT (INFO) -->
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Email: akshitp1115@gmail.com</p>
+                    <p>Phone: +91 7069729523</p>
+                    <p>Location: Surat, Gujarat, India</p>
+                </div>
+
+                <!-- RIGHT (FORM) -->
+                <div class="contact-form">
+                    <form id="contactForm">
+
+                        <input type="text" id="name" placeholder="Your Name">
+
+                        <input type="email" id="email" placeholder="Your Email">
+
+                        <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+
+                        <button type="submit" class="btn">Send Message</button>
+
+                    </form>
+                </div>
+
+            </div>
         </section>
 
 
     </main>
     <!-- FOOTER -->
-    <footer>
-        <p>© 2026 My Portfolio</p>
+    <footer id="footer">
+
+        <p>© 2026 Akshit Patel. All Rights Reserved.</p>
+
+        <div class="social-links">
+            <a href="https://github.com/Akshitpatel1115" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/akshit-patel1115" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/_akshit_1115?igsh=MWJxbzJzdWxkeXd2Yw==" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:akshitp1115@gmail.com" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+
     </footer>
 
     <script src="script.js"></script>
