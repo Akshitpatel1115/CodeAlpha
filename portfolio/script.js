@@ -22,20 +22,18 @@ const navLinks = document.querySelectorAll("#navMenu li a");
 
 if (mobileMenu) {
     mobileMenu.addEventListener("click", () => {
+        mobileMenu.classList.toggle("active");
         navMenu.classList.toggle("active");
-        const icon = mobileMenu.querySelector("i");
-        icon.classList.toggle("fa-bars");
-        icon.classList.toggle("fa-times");
+        document.body.classList.toggle("no-scroll");
     });
 }
 
 // Close menu when clicking links
 navLinks.forEach(link => {
     link.addEventListener("click", () => {
+        mobileMenu.classList.remove("active");
         navMenu.classList.remove("active");
-        const icon = mobileMenu.querySelector("i");
-        icon.classList.add("fa-bars");
-        icon.classList.remove("fa-times");
+        document.body.classList.remove("no-scroll");
     });
 });
 
@@ -43,7 +41,6 @@ navLinks.forEach(link => {
 const form = document.getElementById("contactForm");
 if (form) {
     form.addEventListener("submit", function(e) {
-        e.preventDefault();
 
         let name = document.getElementById("name").value.trim();
         let email = document.getElementById("email").value.trim();

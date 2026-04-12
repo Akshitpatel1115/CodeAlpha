@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -26,7 +28,9 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="menu-toggle" id="mobile-menu">
-                <i class="fas fa-bars"></i>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </nav>
     </header>
@@ -175,25 +179,29 @@
                 <div class="service-card">
                     <i class="fas fa-desktop"></i>
                     <h3>Frontend Development</h3>
-                    <p>Building high-performance, responsive, and pixel-perfect user interfaces using modern technologies like HTML, CSS, and JS frameworks.</p>
+                    <p>Building high-performance, responsive, and pixel-perfect user interfaces using modern
+                        technologies like HTML, CSS, and JS frameworks.</p>
                 </div>
 
                 <div class="service-card">
                     <i class="fas fa-paint-brush"></i>
                     <h3>User-Centric Design</h3>
-                    <p>Crafting intuitive and responsive UI/UX that prioritizes user experience and brand identity across all devices.</p>
+                    <p>Crafting intuitive and responsive UI/UX that prioritizes user experience and brand identity
+                        across all devices.</p>
                 </div>
 
                 <div class="service-card">
                     <i class="fas fa-cloud-upload-alt"></i>
                     <h3>Cloud & DB Solutions</h3>
-                    <p>Implementing real-time synchronization and secure data management using Firebase, MySQL, and SQL.</p>
+                    <p>Implementing real-time synchronization and secure data management using Firebase, MySQL, and SQL.
+                    </p>
                 </div>
 
                 <div class="service-card">
                     <i class="fas fa-rocket"></i>
                     <h3>Performance Tuning</h3>
-                    <p>Optimizing web applications for speed, SEO, and ensuring high performance for a seamless user experience.</p>
+                    <p>Optimizing web applications for speed, SEO, and ensuring high performance for a seamless user
+                        experience.</p>
                 </div>
 
             </div>
@@ -328,14 +336,12 @@
 
                 <!-- RIGHT (FORM) -->
                 <div class="contact-form">
-                    <form id="contactForm">
+                    <form method="post" action="https://formspree.io/f/xdaynkld" id="contactForm">
+                        <input type="text" name="name" placeholder="Your Name" required>
 
-                        <input type="text" id="name" placeholder="Your Name">
+                        <input type="email" name="email" placeholder="Your Email" required>
 
-                        <input type="email" id="email" placeholder="Your Email">
-
-                        <textarea id="message" rows="5" placeholder="Your Message"></textarea>
-
+                        <textarea name="message" placeholder="Your Message" required></textarea>
                         <button type="submit" class="btn">Send Message</button>
 
                     </form>
@@ -358,7 +364,8 @@
             <a href="https://www.linkedin.com/in/akshit-patel1115" target="_blank" title="LinkedIn">
                 <i class="fab fa-linkedin-in"></i>
             </a>
-            <a href="https://www.instagram.com/_akshit_1115?igsh=MWJxbzJzdWxkeXd2Yw==" target="_blank" title="Instagram">
+            <a href="https://www.instagram.com/_akshit_1115?igsh=MWJxbzJzdWxkeXd2Yw==" target="_blank"
+                title="Instagram">
                 <i class="fab fa-instagram"></i>
             </a>
             <a href="mailto:akshitp1115@gmail.com" title="Email">
