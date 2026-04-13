@@ -1,0 +1,56 @@
+:root{
+    --bg-primary: black;
+    --bg-secondry: rgb(118, 112, 112);
+
+    --primary-color: white;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: var(--bg-primary);
+    color: var(--primary-color);
+}
+
+.container{
+    background-color: var(--bg-secondry);
+    margin: auto;
+    max-width: 550px;
+    border-radius: 10px;
+}
+
+.container h2{
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+    padding: 12px;
+}
+
+.container .screen{
+    max-width: 550px;
+    margin: 12px;
+    height: 10vh;
+    background-color:rgb(61, 58, 58) ;
+    padding: 28px;
+    border-radius: 10PX;
+}
+
+.container .controls{
+    padding: 12px;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+}
+
+.container .btn{
+    border-radius: 12px;
+    padding: 5px;
+    font-size: 25px;
+}
